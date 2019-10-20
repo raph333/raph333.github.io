@@ -1,5 +1,26 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-cayman
+url: https://raph333.github.io
+baseurl: /projects/
+
+# Site settings
+title: Raphael Peer
+email: raphael1peer@gmail.com
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/raphael-peer
+  - title: github
+    url: https://github.com/raph333
+  - title: kaggle
+    url: https://www.kaggle.com/rpeer333
+
+# Postal address (add as many lines as necessary)
+#address:
+#  - line: 3481 Melrose Place
+#  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty
