@@ -1,3 +1,156 @@
+<div class="portfolio-modal modal fade" id="portfolioModal_champs" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h3>kaggle competition</h3>
+                        <h2>Predicting Molecular Properties</h2>
+                        <a href="https://www.kaggle.com/c/champs-scalar-coupling" class="button" target="_blank">Go to kaggle competition</a>
+
+                        <hr class="star-primary">
+                        <img src="img/portfolio/champs2.png" class="img-responsive img-centered" alt="image-alt">
+                        <font size="4">
+                        In this competition, CHAMPS (CHemistry and Mathematics in Phase Space) provided the 3D-structures of 130775 molecules.
+                        The goal was to predict the scalar-coupling-constant (a measure of electromagnetic interaction) of atom-pairs.
+                        It was extremely interesting to experiment with different ways of representing 3D structures and gathering experience with graph-convolutional networks.
+                        Most of the things I tried didn't work very well :-) but in the end, optimizing a standard graph-conv-net for the task at hand got me a place in the top 8%
+                        and my first kaggle-medal. <!--<i class='fa fa-medal'></i>-->
+                      </br>
+                      </br>
+                        <h4 style="text-align:left; padding-left:150px">Some of my notebooks</h4>
+                          <ul class="left">
+                                  <li><strong>Exporatory Data Analysis:
+                                    <a href="https://www.kaggle.com/rpeer333/molecular-properties-detailed-eda", style="color:#008CBA">part_1, </a>
+                                    <a href="https://www.kaggle.com/rpeer333/champs-competition-baseline-trivial-predictions", style="color:#008CBA">part_2</a>
+                                  </strong></li>
+                                  <li><strong>Feature engineering and lightGBM model:
+                                    <a href="https://www.kaggle.com/rpeer333/super-simple-10-nearest-atoms-features", style="color:#008CBA">model_1, </a>
+                                    <a href="https://www.kaggle.com/rpeer333/only-distance-type-and-angle-of-10-nearest-atoms", style="color:#008CBA">model_2</a>
+                                  </strong></li>
+                                  <li><strong>Graph convolutional net:
+                                    <a href="https://www.kaggle.com/rpeer333/pytorch-dgl-schnet-a-graph-convolutional-net", style="color:#008CBA">Schnet implementation in pyTorch</a>
+                                  </strong></li>
+                          </ul>
+
+                           </font>
+                      </br>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="portfolio-modal modal fade" id="portfolioModal_histo" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h3>kaggle competition</h3>
+                        <h2>Histopathologic Cancer Detection</h2>
+                        <a href="https://www.kaggle.com/c/histopathologic-cancer-detection" class="button" target="_blank">Go to kaggle competition</a>
+
+                        <hr class="star-primary">
+                        <img src="img/portfolio/histo.png" class="img-responsive img-centered" alt="image-alt">
+                        <font size="4">
+                          <p><font size="4">
+                            This projcet was done in collaboration with my collegue <a href="https://www.kaggle.com/msteger93", style="color:#008CBA">Marcel</a> as our course
+                            project for the seminar 'Advanced Data Challage'.
+                          </font></p>
+                          <p><font size="4">
+                            One interesting aspect of this project was that we trained a model to do a task we couldn't do manually.
+                            Trying to detect chancer cells by looking at the images we found that our performance was as poor as random guessing,
+                            wheras even our worst models reached ~80% accuracy. This is in stark constrast to most computer vision problems where even the best
+                            models don't reach the performance of regular people.
+                          </font></p>
+                          <p><font size="4">
+                            In the end, we used the <a href="https://arxiv.org/abs/1608.06993", style="color:#008CBA">DenseNet architecture</a> for this task and
+                            managed to obtain a 96% accuracy (binary classification, balanced classes).
+                          </font></p>
+                      </br>
+                        <h4 style="text-align:left; padding-left:150px">Notebooks</h4>
+                          <ul class="left">
+                                  <li><strong>Exporatory Data Analysis:</strong>
+                                    Run <a href="https://www.kaggle.com/rpeer333/can-you-identify-cancer-cells", style="color:#008CBA"><strong>this notebook</strong></a> to
+                                    see if you're any better than random guessing at identifying cancer cells.
+                                  </li>
+                                  <li><strong>The Model:
+                                    <a href="https://www.kaggle.com/rpeer333/pytorch-densenet-for-cancer-detection", style="color:#008CBA">Pytorch DenseNet</a>
+                                  </strong></li>
+                          </ul>
+
+                           </font>
+                      </br>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="portfolio-modal modal fade" id="portfolioModal_densenet" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>ResNet and DenseNet</h2>
+                        <h3>Building conv-net architectures from scratch</h3>
+
+
+                        <hr class="star-primary">
+                        <img src="img/portfolio/densenet.png" class="img-responsive img-centered" alt="image-alt">
+                          <p><font size="4">
+                            For the computer vision course thought by Roland Kwitt at the University of Salzburg, I implementated two state of the art convolutional architectures:
+                            <a href="https://arxiv.org/abs/1512.03385", style="color:#008CBA">ResNet</a> and <a href="https://arxiv.org/abs/1608.06993", style="color:#008CBA">DenseNet</a>.
+                          </font></p>
+                          <p><font size="4">
+
+                          </font></p>
+                          <p><font size="4">
+
+                          </font></p>
+                      </br>
+                      <a href="https://github.com/raph333/resnet_densenet_sandpit" class="button" target="_blank">Go to git-hub repo</a>
+                      </br>
+                      </br>
+                      </br>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
  <!-- Portfolio Modals -->
  <!--{% for post in site.posts %}
     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -38,55 +191,3 @@
         </div>
     </div>
 {% endfor %}-->
-
-
-<div class="portfolio-modal modal fade" id="portfolioModal_champs" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h3>kaggle competition</h3>
-                        <h2>Predicting Molecular Properties</h2>
-                        <a href="https://www.kaggle.com/c/champs-scalar-coupling" class="button" target="_blank">Go to kaggle competition</a>
-
-                        <hr class="star-primary">
-                        <img src="img/portfolio/champs.png" class="img-responsive img-centered" alt="image-alt">
-                        <font size="4">
-                        In this competition, CHAMPS (CHemistry and Mathematics in Phase Space) provided the 3D-structures of 130775 molecules.
-                        The goal was to predict the scalar-coupling-constant (a measure of electromagnetic interaction) of atom-pairs.
-                        It was extremely interesting to experiment with different ways of representing 3D structures and gathering experience with graph-convolutional networks.
-                        Most of the things I tried didn't work very well :-) but in the end, optimizing a standard graph-conv-net for the task at hand got me a place in the top 8%
-                        and my first kaggle-medal.
-                      </br>
-                      </br>
-                        <h4 style="text-align:left; padding-left:150px">Some of my notebooks</h4>
-                          <ul class="left">
-                                  <li><strong>Exporatory Data Analysis:
-                                    <a href="https://www.kaggle.com/rpeer333/molecular-properties-detailed-eda", style="color:#008CBA">part_1, </a>
-                                    <a href="https://www.kaggle.com/rpeer333/champs-competition-baseline-trivial-predictions", style="color:#008CBA">part_2</a>
-                                  </strong></li>
-                                  <li><strong>Feature engineering and lightGBM model:
-                                    <a href="https://www.kaggle.com/rpeer333/super-simple-10-nearest-atoms-features", style="color:#008CBA">model_1, </a>
-                                    <a href="https://www.kaggle.com/rpeer333/only-distance-type-and-angle-of-10-nearest-atoms", style="color:#008CBA">model_2</a>
-                                  </strong></li>
-                                  <li><strong>Graph convolutional net:
-                                    <a href="https://www.kaggle.com/rpeer333/pytorch-dgl-schnet-a-graph-convolutional-net", style="color:#008CBA">Schnet implementation in pyTorch</a>
-                                  </strong></li>
-                          </ul>
-
-                           </font>
-                      </br>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

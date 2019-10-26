@@ -3,3 +3,4 @@ _site
 img/headers
 _posts
 mail
+img/*.py
