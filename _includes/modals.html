@@ -17,14 +17,28 @@
                         <hr class="star-primary">
                         <img src="img/portfolio/champs2.png" class="img-responsive img-centered" alt="image-alt">
                         <font size="4">
-                        In this competition, CHAMPS (CHemistry and Mathematics in Phase Space) provided the 3D-structures of 130775 molecules.
+                        <!-- In this competition, CHAMPS (CHemistry and Mathematics in Phase Space) provided the 3D-structures of 130775 molecules.
                         The goal was to predict the scalar-coupling-constant (a measure of electromagnetic interaction) of atom-pairs.
                         It was extremely interesting to experiment with different ways of representing 3D structures and gathering experience with graph-convolutional networks.
                         I tried many different approaches and in the end, simply optimizing a standard graph-conv-net yielded the best results and an allowed me to obtain my
-                        first kaggle medal (top 8%).
+                        first kaggle medal (top 8%). -->
+                        <h4 style="text-align:left; padding-left:150px">Overview</h4>
+                        <ul class="left">
+                          <li><strong>Goal:</strong>
+                            Predict interaction between atoms (scalar coupling constant) in molecules
+                          </li>
+                          <li><strong>Data:</strong>
+                            130775 3D-structures of organic molecules
+                          </li>
+                          <li><strong>Methods:</strong>
+                            Graph convolutional neural network(<i>SchNet</i>)
+                          </li>
+                          <li><strong>Result:</strong>
+                            Top 8% place in kaggle competition (my first kaggle medal)
+                          </li>
+                        </ul>
                       </br>
-                      </br>
-                        <h4 style="text-align:left; padding-left:150px">Some of my notebooks</h4>
+                        <h4 style="text-align:left; padding-left:150px">Notebooks</h4>
                           <ul class="left">
                                   <li><strong>Exporatory Data Analysis:
                                     <a href="https://www.kaggle.com/rpeer333/molecular-properties-detailed-eda", style="color:#008CBA">part_1, </a>
@@ -69,7 +83,7 @@
 
                         <hr class="star-primary">
                         <img src="img/portfolio/histo.png" class="img-responsive img-centered" alt="image-alt">
-                        <font size="4">
+                        <!-- <font size="4">
                           <p><font size="4">
                             This projcet was done in collaboration with my collegue <a href="https://www.kaggle.com/msteger93", style="color:#008CBA">Marcel</a> as our course
                             project for the seminar 'Advanced Data Challage'.
@@ -83,7 +97,27 @@
                           <p><font size="4">
                             In the end, we used a 121 layer deep <a href="https://arxiv.org/abs/1608.06993", style="color:#008CBA">DenseNet architecture</a> for this task and
                             managed to obtain a 96% accuracy (binary classification, balanced classes).
-                          </font></p>
+                          </font></p> -->
+                          <font size="4">
+                          <h4 style="text-align:left; padding-left:150px">Overview</h4>
+                          <ul class="left">
+                            <li><strong>Background:</strong>
+                              This projcet was done in collaboration with my collegue <a href="https://www.kaggle.com/msteger93", style="color:#008CBA">Marcel</a> as our course
+                              project for the seminar 'Advanced Data Challage'.
+                            </li>
+                            <li><strong>Goal:</strong>
+                              Predict if medical images shows cancerous or healthy tissue
+                            </li>
+                            <li><strong>Data:</strong>
+                              50000 histopathologic images
+                            </li>
+                            <li><strong>Methods:</strong>
+                              Convolutional neural network (<i>DenseNet</i>)
+                            </li>
+                            <li><strong>Result:</strong>
+                              96% accuracy (balanced classes)
+                            </li>
+                          </ul>
                       </br>
                         <h4 style="text-align:left; padding-left:150px">Notebooks</h4>
                           <ul class="left">
@@ -125,14 +159,34 @@
 
                         <hr class="star-primary">
                         <img src="img/portfolio/cifar.png" class="img-responsive img-centered" alt="image-alt">
-                          <p><font size="4">
+                          <!-- <p><font size="4">
                             For the computer vision course thought by Roland Kwitt at the University of Salzburg, I implementated two state of the art convolutional network architectures:
                             <a href="https://arxiv.org/abs/1512.03385", style="color:#008CBA">ResNet</a> and <a href="https://arxiv.org/abs/1608.06993", style="color:#008CBA">DenseNet</a>.
                             Building these architectures myself was a great way to learn how they work.
                           </font></p>
                           <p><font size="4">
                             For this project, I used the CIFAR-100 dataset which contains 50000 tiny images with 100 different classes. A few example images of this dataset are shown above.
-                          </font></p>
+                          </font></p> -->
+                          <font size="4">
+                          <h4 style="text-align:left; padding-left:150px">Overview</h4>
+                          <ul class="left">
+                            <li><strong>Background:</strong>
+                              Course project for the omputer vision seminar thought by Roland Kwitt at the University of Salzburg
+                            </li>
+                            <li><strong>Goal:</strong>
+                              Classify images with hundred diffent classes: various animals, every-day objects, etc.
+                            </li>
+                            <li><strong>Data:</strong>
+                              50000 tiny images of the <i>CIFAR-100</i> benchmark dataset (example images shown above)
+                            </li>
+                            <li><strong>Methods:</strong>
+                              Convolutional neural networks: (<i>ResNet</i> and <i>DenseNet</i>)
+                            </li>
+                            <li><strong>Result:</strong>
+                              Learned how these neural network architectures really work by building them from scratch
+                            </li>
+                          </ul>
+                          </font>
                       </br>
                       <a href="https://github.com/raph333/resnet_densenet_sandpit" class="button" target="_blank">Go to git-hub repo</a>
                       </br>
