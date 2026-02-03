@@ -22,45 +22,37 @@
         <div class="content-container">
             <h1 class="page-title">Hi, I'm Raphael</h1>
             
-            <div class="bio">
-                <p>I build software. I'm a backend engineer with a bunch of ML experience. These days, my focus is integrating LLMs into software and using AI tools to increase shipping speed.</p>
-                
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>inscribe</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+            <p class="intro">I build software. I'm a backend engineer with a bunch of ML experience. These days, my focus is integrating LLMs into software and using AI tools to increase shipping speed.</p>
+            
+            <div class="card-stack">
+                <div class="stack-card" onclick="toggleCard(this)">
+                    <h2>inscribe</h2>
+                    <span class="card-chevron">›</span>
+                    <div class="card-details">
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
                     </div>
                 </div>
 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>klarna</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                <div class="stack-card" onclick="toggleCard(this)">
+                    <h2>klarna</h2>
+                    <span class="card-chevron">›</span>
+                    <div class="card-details">
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>blumatix</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                <div class="stack-card" onclick="toggleCard(this)">
+                    <h2>blumatix</h2>
+                    <span class="card-chevron">›</span>
+                    <div class="card-details">
                         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid commodi.</p>
                     </div>
                 </div>
 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>studies</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                <div class="stack-card" onclick="toggleCard(this)">
+                    <h2>studies</h2>
+                    <span class="card-chevron">›</span>
+                    <div class="card-details">
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
                     </div>
                 </div>
@@ -69,8 +61,8 @@
     </main>
 
     <script>
-        function toggleSection(section) {
-            section.classList.toggle('expanded');
+        function toggleCard(card) {
+            card.classList.toggle('expanded');
         }
     </script>
 
