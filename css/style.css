@@ -254,7 +254,7 @@ main {
 
 .timeline-item {
     position: relative;
-    padding-bottom: 2rem;
+    padding-bottom: clamp(3rem, 8vh, 6rem);
     cursor: pointer;
 }
 
