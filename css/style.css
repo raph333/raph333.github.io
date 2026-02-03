@@ -216,114 +216,128 @@ main {
     text-align: left;
 }
 
-.content-container {
-    max-width: 700px;
+.about-layout {
+    max-width: 900px;
     margin: 0 auto;
     padding: 3rem 2rem;
+}
+
+.about-intro {
+    margin-bottom: 4rem;
 }
 
 .page-title {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 2rem;
-    display: inline-block;
-    cursor: default;
-}
-
-.page-title::after {
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.page-title:hover::after {
-    content: ' 👋';
-    opacity: 1;
-}
-
-.bio {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-.bio > p {
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
-}
-
-.company-section {
     margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.company-section:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.company-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.company-section h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    margin: 0;
-    text-transform: lowercase;
-}
-
-.expand-icon {
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    transition: transform 0.3s ease;
-    user-select: none;
-    transform: rotate(0deg);
-}
-
-.company-section.expanded .expand-icon {
-    transform: rotate(90deg);
-}
-
-.company-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: var(--text-secondary);
-    line-height: 1.7;
+    max-width: 600px;
 }
 
-.company-section.expanded .company-content {
-    max-height: 200px;
-    margin-top: 1rem;
+.experience-split {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 3rem;
+    min-height: 200px;
 }
 
-.company-content p {
-    margin: 0;
+.experience-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding-right: 2rem;
 }
 
-/* Responsive adjustments */
+.exp-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    position: relative;
+}
+
+.exp-btn:hover {
+    color: var(--text-primary);
+}
+
+.exp-btn.active {
+    color: var(--accent-color);
+    padding-left: 1rem;
+}
+
+.exp-btn.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.experience-content {
+    padding-top: 0.75rem;
+}
+
+.exp-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.exp-panel.active {
+    display: block;
+}
+
+.exp-panel p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
-    .content-container {
+    .about-layout {
         padding: 2rem 1.5rem;
     }
     
-    .page-title {
-        font-size: 1.75rem;
+    .experience-split {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
-    .company-section h2 {
-        font-size: 1.25rem;
+    .experience-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-right: 0;
+        padding-bottom: 1rem;
+        gap: 0.5rem 1.5rem;
     }
     
-    .company-section {
-        padding: 1.25rem;
+    .exp-btn.active {
+        padding-left: 0;
+    }
+    
+    .exp-btn.active::before {
+        display: none;
     }
 }

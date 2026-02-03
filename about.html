@@ -19,48 +19,31 @@
     </header>
 
     <main class="about-main">
-        <div class="content-container">
-            <h1 class="page-title">Hi, I'm Raphael</h1>
-            
-            <div class="bio">
+        <div class="about-layout">
+            <div class="about-intro">
+                <h1 class="page-title">Hi, I'm Raphael</h1>
                 <p>I build software. I'm a backend engineer with a bunch of ML experience. These days, my focus is integrating LLMs into software and using AI tools to increase shipping speed.</p>
+            </div>
+            
+            <div class="experience-split">
+                <div class="experience-nav">
+                    <button class="exp-btn active" data-target="inscribe">Inscribe</button>
+                    <button class="exp-btn" data-target="klarna">Klarna</button>
+                    <button class="exp-btn" data-target="blumatix">Blumatix</button>
+                    <button class="exp-btn" data-target="studies">Studies</button>
+                </div>
                 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>inscribe</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                <div class="experience-content">
+                    <div class="exp-panel active" id="inscribe">
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
                     </div>
-                </div>
-
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>klarna</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                    <div class="exp-panel" id="klarna">
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                </div>
-
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>blumatix</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                    <div class="exp-panel" id="blumatix">
                         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid commodi.</p>
                     </div>
-                </div>
-
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>studies</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
+                    <div class="exp-panel" id="studies">
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
                     </div>
                 </div>
@@ -69,9 +52,15 @@
     </main>
 
     <script>
-        function toggleSection(section) {
-            section.classList.toggle('expanded');
-        }
+        document.querySelectorAll('.exp-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.exp-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.exp-panel').forEach(p => p.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.target).classList.add('active');
+            });
+        });
     </script>
 
 </body>
