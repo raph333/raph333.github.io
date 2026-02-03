@@ -282,20 +282,14 @@ main {
 }
 
 .card-toggle {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    transition: transform 0.3s ease, color 0.2s ease;
-    user-select: none;
-    font-weight: 300;
-}
-
-.journey-card:hover .card-toggle {
+    font-size: 1.5rem;
     color: var(--accent-color);
+    transition: transform 0.3s ease;
+    user-select: none;
 }
 
 .journey-card.expanded .card-toggle {
-    transform: rotate(45deg);
-    color: var(--accent-color);
+    transform: rotate(90deg);
 }
 
 .card-body {
