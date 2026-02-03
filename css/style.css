@@ -216,7 +216,7 @@ main {
     text-align: left;
 }
 
-.content-container {
+.about-main .content-container {
     max-width: 700px;
     margin: 0 auto;
     padding: 3rem 2rem;
@@ -226,92 +226,106 @@ main {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 2rem;
-    display: inline-block;
-    cursor: default;
-}
-
-.page-title::after {
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.page-title:hover::after {
-    content: ' 👋';
-    opacity: 1;
-}
-
-.bio {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-.bio > p {
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
-}
-
-.company-section {
     margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+/* Connected Cards */
+.journey-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.journey-card {
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.company-section:hover {
-    border-color: rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.02);
 }
 
-.company-header {
+.journey-card:hover {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.journey-card.expanded {
+    border-color: var(--accent-color);
+}
+
+.card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.company-section h2 {
-    font-size: 1.5rem;
+.journey-card h2 {
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--text-primary);
     margin: 0;
-    text-transform: lowercase;
+    transition: color 0.2s ease;
 }
 
-.expand-icon {
-    font-size: 1.5rem;
+.journey-card:hover h2,
+.journey-card.expanded h2 {
     color: var(--accent-color);
-    transition: transform 0.3s ease;
+}
+
+.card-toggle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    transition: transform 0.3s ease, color 0.2s ease;
     user-select: none;
-    transform: rotate(0deg);
+    font-weight: 300;
 }
 
-.company-section.expanded .expand-icon {
-    transform: rotate(90deg);
+.journey-card:hover .card-toggle {
+    color: var(--accent-color);
 }
 
-.company-content {
+.journey-card.expanded .card-toggle {
+    transform: rotate(45deg);
+    color: var(--accent-color);
+}
+
+.card-body {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    color: var(--text-secondary);
-    line-height: 1.7;
+    transition: max-height 0.3s ease, margin-top 0.3s ease;
 }
 
-.company-section.expanded .company-content {
+.journey-card.expanded .card-body {
     max-height: 200px;
     margin-top: 1rem;
 }
 
-.company-content p {
+.card-body p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
     margin: 0;
+}
+
+/* Connector line between cards */
+.journey-connector {
+    width: 1px;
+    height: clamp(2rem, 5vh, 3.5rem);
+    background: linear-gradient(to bottom, var(--accent-color), rgba(148, 163, 184, 0.3));
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .content-container {
+    .about-main .content-container {
         padding: 2rem 1.5rem;
     }
     
@@ -319,11 +333,15 @@ main {
         font-size: 1.75rem;
     }
     
-    .company-section h2 {
-        font-size: 1.25rem;
+    .journey-card {
+        padding: 1rem 1.25rem;
     }
     
-    .company-section {
-        padding: 1.25rem;
+    .journey-card h2 {
+        font-size: 1.1rem;
+    }
+    
+    .journey-connector {
+        height: 1.5rem;
     }
 }
