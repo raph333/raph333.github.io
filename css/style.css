@@ -216,8 +216,8 @@ main {
     text-align: left;
 }
 
-.content-container {
-    max-width: 700px;
+.about-main .content-container {
+    max-width: 800px;
     margin: 0 auto;
     padding: 3rem 2rem;
 }
@@ -226,92 +226,133 @@ main {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 2rem;
-    display: inline-block;
-    cursor: default;
-}
-
-.page-title::after {
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.page-title:hover::after {
-    content: ' 👋';
-    opacity: 1;
-}
-
-.bio {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-.bio > p {
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
-}
-
-.company-section {
     margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.company-section:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.company-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.company-section h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    margin: 0;
-    text-transform: lowercase;
-}
-
-.expand-icon {
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    transition: transform 0.3s ease;
-    user-select: none;
-    transform: rotate(0deg);
-}
-
-.company-section.expanded .expand-icon {
-    transform: rotate(90deg);
-}
-
-.company-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: var(--text-secondary);
-    line-height: 1.7;
+    margin-bottom: 4rem;
 }
 
-.company-section.expanded .company-content {
-    max-height: 200px;
-    margin-top: 1rem;
+/* Node Map - horizontal journey */
+.node-map {
+    margin-top: 2rem;
 }
 
-.company-content p {
+.node-track {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 3rem;
+}
+
+.track-line {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 20px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(148, 163, 184, 0.2), var(--accent-color));
+    z-index: 0;
+}
+
+.track-arrow {
+    position: absolute;
+    right: 12px;
+    top: 2px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid var(--accent-color);
+    z-index: 1;
+}
+
+.node {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.node:last-of-type {
+    flex: 0.7;
+}
+
+.node-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--bg-color);
+    border: 2px solid var(--text-secondary);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-bottom: 0.75rem;
+}
+
+.node:hover .node-dot {
+    border-color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+.node.active .node-dot {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+.node-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.node:hover .node-label {
+    color: var(--text-primary);
+}
+
+.node.active .node-label {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.node-content {
+    min-height: 80px;
+}
+
+.content-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.content-panel.active {
+    display: block;
+}
+
+.content-panel p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
     margin: 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Responsive adjustments */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .content-container {
+    .about-main .content-container {
         padding: 2rem 1.5rem;
     }
     
@@ -319,11 +360,12 @@ main {
         font-size: 1.75rem;
     }
     
-    .company-section h2 {
-        font-size: 1.25rem;
+    .node-label {
+        font-size: 0.75rem;
     }
     
-    .company-section {
-        padding: 1.25rem;
+    .node-dot {
+        width: 12px;
+        height: 12px;
     }
 }
