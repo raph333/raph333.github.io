@@ -227,6 +227,19 @@ main {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 1.5rem;
+    display: inline-block;
+    cursor: default;
+}
+
+.page-title::after {
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.page-title:hover::after {
+    content: ' 👋';
+    opacity: 1;
 }
 
 .intro {
