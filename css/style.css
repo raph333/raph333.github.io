@@ -301,12 +301,12 @@ main {
 }
 
 .company-section.expanded .company-content {
-    max-height: 200px;
+    max-height: 800px;
     margin-top: 1rem;
 }
 
 .company-content p {
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 /* Responsive adjustments */
