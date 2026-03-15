@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thoughts | Raphael Peer</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            /* Overriding the about page wave emoji for the thoughts page */
+            .page-title::after {
+                display: none !important;
+            }
+
+            /* Notion-style directory layout */
+            .directory-list {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+                margin-top: 2rem;
+            }
+
+            .directory-item {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 0.75rem;
+                margin-left: -0.75rem; /* Pulls left so the text aligns visually with the title above */
+                border-radius: 6px;
+                text-decoration: none;
+                color: var(--text-primary);
+                transition: background-color 0.2s ease;
+                cursor: pointer;
+            }
+
+            .directory-item:hover {
+                background-color: rgba(255, 255, 255, 0.05);
+                color: var(--text-primary);
+            }
+
+            .page-icon {
+                margin-right: 0.75rem;
+                font-size: 1.25rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.5rem;
+                opacity: 0.9;
+            }
+
+            .page-name {
+                font-size: 1.1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: var(--text-secondary);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-links">
+                    <a href="/">home</a>
+                    <a href="/thoughts.html" class="active">thoughts</a>
+                    <a href="/about.html">about</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="about-main">
+            <div class="content-container">
+                <h1 class="page-title">thoughts</h1>
+
+                <div class="directory-list">
+                    <!-- Example Note 1 -->
+                    <a href="/thoughts/lorem-ipsum.html" class="directory-item">
+                        <span class="page-icon">📝</span>
+                        <span class="page-name"
+                            >Lorem ipsum dolor sit amet</span
+                        >
+                    </a>
+
+                    <!-- Example Note 2 -->
+                    <a
+                        href="/thoughts/consectetur-adipiscing.html"
+                        class="directory-item"
+                    >
+                        <span class="page-icon">💡</span>
+                        <span class="page-name"
+                            >Consectetur adipiscing elit, sed do eiusmod
+                            tempor</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
