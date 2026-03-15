@@ -1,78 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Raphael Peer</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About | Raphael Peer</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-links">
+                    <a href="/">home</a>
+                    <a href="/thoughts.html">thoughts</a>
+                    <a href="/about.html" class="active">about</a>
+                </div>
+            </nav>
+        </header>
 
-    <header>
-        <nav>
-            <div class="nav-links">
-                <a href="/">home</a>
-                <a href="/thoughts.html">thoughts</a>
-                <a href="/about.html" class="active">about</a>
+        <main class="about-main">
+            <div class="content-container">
+                <h1 class="page-title">Hi, I'm Raphael</h1>
+
+                <div class="bio">
+                    <p>
+                        I build software. I'm a backend engineer with a bunch of
+                        ML experience. These days, my focus is integrating LLMs
+                        into software and using AI tools to increase development
+                        speed.
+                    </p>
+
+                    <div
+                        class="company-section"
+                        role="button"
+                        tabindex="0"
+                        aria-expanded="false"
+                        aria-controls="inscribe-content"
+                    >
+                        <div class="company-header">
+                            <h2>inscribe</h2>
+                            <span class="expand-icon">›</span>
+                        </div>
+                        <div class="company-content" id="inscribe-content">
+                            <p>
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur excepteur sint occaecat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="company-section"
+                        role="button"
+                        tabindex="0"
+                        aria-expanded="false"
+                        aria-controls="klarna-content"
+                    >
+                        <div class="company-header">
+                            <h2>klarna</h2>
+                            <span class="expand-icon">›</span>
+                        </div>
+                        <div class="company-content" id="klarna-content">
+                            <p>
+                                Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim
+                                id est laborum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="company-section"
+                        role="button"
+                        tabindex="0"
+                        aria-expanded="false"
+                        aria-controls="blumatix-content"
+                    >
+                        <div class="company-header">
+                            <h2>blumatix</h2>
+                            <span class="expand-icon">›</span>
+                        </div>
+                        <div class="company-content" id="blumatix-content">
+                            <p>
+                                Ut enim ad minima veniam, quis nostrum
+                                exercitationem ullam corporis suscipit
+                                laboriosam nisi ut aliquid commodi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="company-section"
+                        role="button"
+                        tabindex="0"
+                        aria-expanded="false"
+                        aria-controls="studies-content"
+                    >
+                        <div class="company-header">
+                            <h2>studies</h2>
+                            <span class="expand-icon">›</span>
+                        </div>
+                        <div class="company-content" id="studies-content">
+                            <p>
+                                Originally, I studied molecular biology at the
+                                University of Vienna. During my masters I got
+                                into computational biology and bioinformatics
+                                and found it so interesting that I moved from
+                                the lab bench to the keyboard. During my
+                                master's project at the MRC Laboratory of
+                                Molecular Biology, I picked up a lot of coding
+                                and data analysis skills and found out that
+                                these skills are also sought after in the tech
+                                industry. Since I mainly enjoyed the process of
+                                coding and data analysis and wasn't keen on an
+                                academic career, I set my sights on the tech
+                                industry and have never looked back.
+                            </p>
+
+                            <p>
+                                I went on to study data science at the
+                                University of Salzburg with a focus on computer
+                                science, statistics, and machine learning and
+                                includuing really cool collaborations with
+                                companies to apply machine learning in the real
+                                world. Most importantly, in the second semester,
+                                the folks from Blumatix, a small software
+                                consulting company turned startup, gave me a
+                                shot and hired me to work half time a as a data
+                                scientist to build ML models for the parsing of
+                                key details from invoices. Working in a small
+                                team for super smart folks tought me more than
+                                any degree ever could. Working and studying in
+                                parallel was a pretty busy time great for fast
+                                learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+        </main>
 
-    <main class="about-main">
-        <div class="content-container">
-            <h1 class="page-title">Hi, I'm Raphael</h1>
-            
-            <div class="bio">
-                <p>I build software. I'm a backend engineer with a bunch of ML experience. These days, my focus is integrating LLMs into software and using AI tools to increase shipping speed.</p>
-                
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>inscribe</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
-                    </div>
-                </div>
+        <script>
+            const SCROLL_DELAY_MS = 150;
 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>klarna</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
+            function toggleSection(section) {
+                section.classList.toggle("expanded");
 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>blumatix</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
-                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid commodi.</p>
-                    </div>
-                </div>
+                const isExpanded = section.classList.contains("expanded");
+                section.setAttribute("aria-expanded", String(isExpanded));
 
-                <div class="company-section" onclick="toggleSection(this)">
-                    <div class="company-header">
-                        <h2>studies</h2>
-                        <span class="expand-icon">›</span>
-                    </div>
-                    <div class="company-content">
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+                if (isExpanded) {
+                    function handleScrollAfterExpand() {
+                        if (!section.classList.contains("expanded")) return;
 
-    <script>
-        function toggleSection(section) {
-            section.classList.toggle('expanded');
-        }
-    </script>
+                        const rect = section.getBoundingClientRect();
+                        const bottomPadding = 16;
+                        const overflow =
+                            rect.bottom - window.innerHeight + bottomPadding;
 
-</body>
+                        if (overflow > 0) {
+                            window.scrollBy({
+                                top: overflow,
+                                behavior: "smooth",
+                            });
+                        }
+                    }
+
+                    setTimeout(handleScrollAfterExpand, SCROLL_DELAY_MS);
+                }
+            }
+
+            function handleSectionClick(event) {
+                toggleSection(event.currentTarget);
+            }
+
+            // for keyboard accessibility
+            function handleSectionKey(event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    toggleSection(event.currentTarget);
+                }
+            }
+
+            const sections = document.querySelectorAll(".company-section");
+            sections.forEach((section) => {
+                section.addEventListener("click", handleSectionClick);
+                section.addEventListener("keydown", handleSectionKey);
+            });
+        </script>
+    </body>
 </html>
