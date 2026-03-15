@@ -105,10 +105,9 @@
                                 Originally, I studied molecular biology at the
                                 University of Vienna. During my masters I got
                                 into computational biology and bioinformatics
-                                and found it so interesting that I moved from
-                                the lab bench to the keyboard. During my
-                                master's project at the MRC Laboratory of
-                                Molecular Biology, I picked up a lot of coding
+                                and switched from the lab bench to the keyboard.
+                                During my master's project at the MRC Laboratory
+                                of Molecular Biology, I picked up a some coding
                                 and data analysis skills and found out that
                                 these skills are also sought after in the tech
                                 industry. Since I mainly enjoyed the process of
@@ -142,6 +141,7 @@
 
         <script>
             const SCROLL_DELAY_MS = 150;
+            const BOTTOM_PADDING = 16;
 
             function toggleSection(section) {
                 section.classList.toggle("expanded");
@@ -154,9 +154,8 @@
                         if (!section.classList.contains("expanded")) return;
 
                         const rect = section.getBoundingClientRect();
-                        const bottomPadding = 16;
                         const overflow =
-                            rect.bottom - window.innerHeight + bottomPadding;
+                            rect.bottom - window.innerHeight + BOTTOM_PADDING;
 
                         if (overflow > 0) {
                             window.scrollBy({
