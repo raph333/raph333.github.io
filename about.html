@@ -5,6 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About | Raphael Peer</title>
         <link rel="stylesheet" href="css/style.css" />
+        <style>
+            .page-title::after {
+                content: "👋";
+                opacity: 0;
+                margin-left: 0.5rem;
+                transition: opacity 0.3s ease;
+            }
+
+            .page-title:hover::after {
+                opacity: 1;
+            }
+        </style>
     </head>
     <body>
         <header>
