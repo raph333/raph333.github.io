@@ -18,11 +18,11 @@
 }
 
 .directory-item:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: transparent;
 }
 
 .directory-item:hover .page-name {
-    color: var(--text-primary);
+    color: var(--accent-secondary) !important;
 }
 
 .page-icon {
