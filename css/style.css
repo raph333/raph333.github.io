@@ -300,6 +300,10 @@ main {
     line-height: 1.7;
 }
 
+.company-content.no-transition {
+    transition: none;
+}
+
 .company-section.expanded .company-content {
     max-height: 800px;
     margin-top: 1rem;
