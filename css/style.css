@@ -247,7 +247,7 @@ main {
 }
 
 .company-section:hover .expand-icon,
-.company-section.expanded .expand-icon {
+.company-section:hover h2 {
     color: var(--text-primary-highlight);
 }
 
