@@ -132,7 +132,7 @@ main {
 
 .icon-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--accent-color);
+    border-color: var(--text-primary-highlight);
     transform: translateY(-2px);
 }
 
@@ -183,38 +183,6 @@ main {
     line-height: 1.8;
     color: var(--text-secondary);
     margin-bottom: 1rem;
-}
-
-.experience {
-    margin-top: 2rem;
-}
-
-.experience h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary-highlight);
-}
-
-.experience ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.experience li {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.experience li::before {
-    content: "▹";
-    position: absolute;
-    left: 0;
-    color: var(--text-primary-highlight);
 }
 
 /* About page styles */
@@ -329,47 +297,4 @@ main {
     .company-section {
         padding: 1.25rem;
     }
-}
-
-/* Thoughts page styles */
-.thoughts-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin-top: 2rem;
-}
-
-.thought-post {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.thought-meta {
-    color: var(--text-secondary);
-    font-family:
-        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
-}
-
-.thought-title {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    margin: 0;
-}
-
-.thought-content {
-    color: var(--text-secondary);
-    line-height: 1.8;
-    font-size: 1.05rem;
-}
-
-.thought-content p {
-    margin-bottom: 1.25rem;
-}
-
-.thought-content p:last-child {
-    margin-bottom: 0;
 }
