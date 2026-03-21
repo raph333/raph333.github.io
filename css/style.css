@@ -26,6 +26,7 @@
     --text-secondary-highlight: rgba(189, 210, 232, 1);
     --text-secondary-fade: rgba(106, 119, 143, 1);
     --font-main: "Geist", system-ui, sans-serif;
+    /* Other cool fonts: Inter, Nunito , Figtree */
 }
 
 * {
@@ -88,101 +89,23 @@ a:hover {
     color: var(--text-primary-highlight);
 }
 
-.hero-banner {
-    width: 100%;
-    height: 300px;
-    background-image: url("../images/beaches/conil_left.jpeg");
-    background-size: cover;
-    background-position: center 30%;
-    /* mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%); */
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 main {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    text-align: center;
-    margin-top: -150px; /* Pull up to center better */
-}
-
-.profile-container {
-    max-width: 600px;
-}
-
-.name {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-}
-
-.title {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    font-weight: 300;
-    margin-bottom: 2rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.icon-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.icon-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--text-primary-highlight);
-    transform: translateY(-2px);
-}
-
-.icon-link svg {
-    width: 20px;
-    height: 20px;
-    color: var(--text-primary);
 }
 
 @media (max-width: 768px) {
-    .name {
-        font-size: 2rem;
-    }
-
-    .title {
-        font-size: 1rem;
-    }
-
     .nav-links {
         gap: 1.5rem;
         font-size: 0.9rem;
-    }
-
-    .hero-banner {
-        height: 200px;
     }
 }
 
 /* Shared Layout for Internal Pages */
 
 .about-main {
-    margin-top: 0;
-    justify-content: flex-start;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
 }
 
 .content-container {
