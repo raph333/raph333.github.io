@@ -249,10 +249,15 @@ main {
 
 .expand-icon {
     font-size: 1.5rem;
-    color: var(--text-primary-highlight);
-    transition: transform 0.3s ease;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
     user-select: none;
     transform: rotate(0deg);
+}
+
+.company-section:hover .expand-icon,
+.company-section.expanded .expand-icon {
+    color: var(--text-primary-highlight);
 }
 
 .company-section.expanded .expand-icon {
