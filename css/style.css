@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap");
 
+/*
+   DESIGN SYSTEM GRAMMAR
+   ---------------------
+
+   WEIGHTS:
+   - 300: headers
+   - 400: text
+
+   SPACING:
+   - 0.02em: Currentl uniform for all text to improve dark mode readability
+
+   COLORS:
+   - Primary: Sand - headers
+   - Secondary: Blue - text
+   - Highlight: Brighter version of color upon hover/active
+   - Fade: Dimmer version of color after visited
+*/
+
 :root {
     --bg-color: rgba(20, 29, 46, 1);
     --text-primary: rgba(245, 230, 211, 1);
@@ -276,7 +294,6 @@ main {
     margin: 0 0 1rem 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .content-container {
         padding: 2rem 1.5rem;
