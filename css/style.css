@@ -9,7 +9,7 @@
    - 400: text
 
    SPACING:
-   - 0.02em: Currentl uniform for all text to improve dark mode readability
+   - 0.02em: Currently uniform for all text to improve dark mode readability
 
    COLORS:
    - Primary: Sand - headers
@@ -177,24 +177,8 @@ main {
     }
 }
 
-.content-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-}
+/* Shared Layout for Internal Pages */
 
-.bio {
-    margin-bottom: 3rem;
-}
-
-.bio p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
-
-/* About page styles */
 .about-main {
     margin-top: 0;
     justify-content: flex-start;
@@ -218,82 +202,6 @@ main {
     cursor: default;
 }
 
-.bio {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-.bio > p {
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
-}
-
-.company-section {
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.company-section:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.company-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.company-section h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--text-primary);
-    margin: 0;
-    text-transform: lowercase;
-}
-
-.expand-icon {
-    font-size: 1.5rem;
-    color: var(--text-primary);
-    transition: all 0.3s ease;
-    user-select: none;
-    transform: rotate(0deg);
-}
-
-.company-section:hover .expand-icon,
-.company-section:hover h2 {
-    color: var(--text-primary-highlight);
-}
-
-.company-section.expanded .expand-icon {
-    transform: rotate(90deg);
-}
-
-.company-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-.company-content.no-transition {
-    transition: none;
-}
-
-.company-section.expanded .company-content {
-    max-height: 800px;
-    margin-top: 1rem;
-}
-
-.company-content p {
-    margin: 0 0 1rem 0;
-}
-
 @media (max-width: 768px) {
     .content-container {
         padding: 2rem 1.5rem;
@@ -301,13 +209,5 @@ main {
 
     .page-title {
         font-size: 1.75rem;
-    }
-
-    .company-section h2 {
-        font-size: 1.25rem;
-    }
-
-    .company-section {
-        padding: 1.25rem;
     }
 }
