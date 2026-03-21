@@ -58,7 +58,6 @@ a:hover {
     display: flex;
     gap: 2rem;
     font-size: 0.95rem;
-    letter-spacing: 0.5px;
 }
 
 .nav-links a {
@@ -100,7 +99,6 @@ main {
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
-    letter-spacing: 1px;
 }
 
 .title {
@@ -108,7 +106,6 @@ main {
     color: var(--text-secondary);
     font-weight: 300;
     margin-bottom: 2rem;
-    letter-spacing: 0.5px;
 }
 
 .social-links {
@@ -171,7 +168,6 @@ main {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 2rem;
-    letter-spacing: 1px;
 }
 
 .bio {
