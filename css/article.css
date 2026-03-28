@@ -1,0 +1,82 @@
+/*
+   ARTICLE STYLES
+   --------------
+   Used for individual thought posts/articles.
+   Provides a clean, Notion-inspired reading experience.
+*/
+
+/* Override the wave emoji from the base page-title styles if present */
+.page-title::after {
+    display: none !important;
+}
+
+/* Notion-style page elements */
+.notion-page-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.notion-page-title {
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.notion-page-content {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.notion-page-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Typography hierarchy for article content */
+.notion-page-content h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300; /* Consistent with design system headers */
+    color: var(--text-primary);
+}
+
+.notion-page-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--text-primary);
+}
+
+/* List styles within articles */
+.notion-page-content ul,
+.notion-page-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.notion-page-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Code blocks or callouts if needed later */
+.notion-page-content blockquote {
+    border-left: 3px solid var(--text-primary-highlight);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .notion-page-icon {
+        font-size: 3rem;
+    }
+
+    .notion-page-content {
+        font-size: 1rem;
+    }
+}
