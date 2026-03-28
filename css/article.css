@@ -71,6 +71,23 @@
     color: var(--text-primary);
 }
 
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    color: var(--text-primary);
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: color 0.2s ease;
+    position: relative;
+    padding: 0.5rem 0;
+    margin-left: 0;
+}
+
+.back-link:hover {
+    color: var(--text-primary-highlight);
+}
+
 @media (max-width: 768px) {
     .notion-page-icon {
         font-size: 3rem;
