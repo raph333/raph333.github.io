@@ -84,6 +84,11 @@
     margin-left: 0;
 }
 
+.back-link::before {
+    content: "←";
+    display: inline-block;
+}
+
 .back-link:hover {
     color: var(--text-primary-highlight);
 }
