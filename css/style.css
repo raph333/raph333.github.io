@@ -124,6 +124,16 @@ main {
     cursor: default;
 }
 
+/* Unified paragraph styling for all content pages */
+.content-container > p,
+.bio > p,
+.notion-page-content p,
+.company-content p {
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
 @media (max-width: 768px) {
     .content-container {
         padding: 2rem 1.5rem;
