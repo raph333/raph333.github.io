@@ -16,7 +16,6 @@
 }
 
 .bio > p {
-    margin-bottom: 3rem;
     font-size: 1.1rem;
 }
 
@@ -80,10 +79,6 @@
 .company-section.expanded .company-content {
     max-height: 800px;
     margin-top: 1rem;
-}
-
-.company-content p {
-    margin: 0 0 1rem 0;
 }
 
 /* Responsive adjustments for About elements */
