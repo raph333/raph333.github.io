@@ -27,6 +27,10 @@
     --text-secondary-fade: rgba(117, 130, 154, 1);
     --font-main: "Geist", system-ui, sans-serif;
     /* Other cool fonts: Inter, Nunito , Figtree */
+
+    /* Container widths */
+    --container-width-wide: 1000px;
+    --container-width-content: 700px;
 }
 
 * {
@@ -59,7 +63,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 1000px;
+    max-width: var(--container-width-wide);
     margin: 0 auto;
 }
 
@@ -109,7 +113,7 @@ main {
 }
 
 .content-container {
-    max-width: 700px;
+    max-width: var(--container-width-content);
     margin: 0 auto;
     padding: 3rem 2rem;
 }

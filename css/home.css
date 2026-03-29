@@ -21,7 +21,7 @@ main {
 }
 
 .profile-container {
-    max-width: 600px;
+    max-width: var(--container-width-content);
 }
 
 .name {
