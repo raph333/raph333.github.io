@@ -132,7 +132,7 @@ main {
 .bio > p,
 .notion-page-content p,
 .company-content p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5em;
     line-height: 1.8;
     color: var(--text-secondary);
     font-size: 1.1rem;
