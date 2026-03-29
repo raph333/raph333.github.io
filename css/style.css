@@ -39,7 +39,7 @@ body {
     background-color: var(--bg-color);
     background-image: radial-gradient(
         circle at center,
-        #1f2937 0%,
+        #212c3b 0%,
         #141d2e 100%
     );
     color: var(--text-primary);
