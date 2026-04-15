@@ -70,7 +70,6 @@
     margin-top: 1rem;
 }
 
-/* Responsive adjustments for About elements */
 @media (max-width: 768px) {
     .company-section h2 {
         font-size: 1.25rem;
