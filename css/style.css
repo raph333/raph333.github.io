@@ -19,7 +19,8 @@
 */
 
 :root {
-    --bg-color: rgba(20, 29, 46, 1);
+    --background: rgba(20, 29, 46, 1);
+    --border-subtle: rgba(255, 255, 255, 0.1);
     --heading: rgba(245, 230, 211, 1);
     --heading-hover: rgba(249, 207, 106, 1);
     --text: rgba(164, 179, 202, 1);
@@ -40,7 +41,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--background);
     background-image: radial-gradient(
         circle at center,
         #212c3b 0%,
