@@ -130,7 +130,7 @@ main {
 
 .content-container > p,
 .bio > p,
-.notion-page-content p,
+.page-content p,
 .company-content p {
     margin-bottom: 1.5em;
     line-height: 1.8;

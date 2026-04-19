@@ -1,29 +1,23 @@
-/*
-   ARTICLE STYLES
-   --------------
-   Used for individual thought posts/articles.
-   Provides a clean, Notion-inspired reading experience.
-*/
-
-/* Override the wave emoji from the base page-title styles if present */
 .page-title::after {
     display: none !important;
 }
 
-/* Notion-style page elements */
-.notion-page-icon {
+.page-icon {
     font-size: 4rem;
     display: block;
     margin-bottom: 1rem;
     line-height: 1;
 }
 
-.notion-page-title {
+.page-title {
     margin-bottom: 2rem;
     line-height: 1.2;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* horizontal line above title */
+    padding-top: 1.5rem;
+    margin-top: 0;
 }
 
-.notion-page-content {
+.page-content {
     color: var(--text-secondary);
     line-height: 1.8;
     font-size: 1.1rem;
@@ -31,15 +25,15 @@
 }
 
 /* Typography hierarchy for article content */
-.notion-page-content h2 {
+.page-content h2 {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    font-weight: 300; /* Consistent with design system headers */
+    font-weight: 300;
     color: var(--text-primary);
 }
 
-.notion-page-content h3 {
+.page-content h3 {
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
@@ -48,18 +42,18 @@
 }
 
 /* List styles within articles */
-.notion-page-content ul,
-.notion-page-content ol {
+.page-content ul,
+.page-content ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
 }
 
-.notion-page-content li {
+.page-content li {
     margin-bottom: 0.5rem;
 }
 
 /* Code blocks or callouts if needed later */
-.notion-page-content blockquote {
+.page-content blockquote {
     border-left: 3px solid var(--text-primary-highlight);
     padding-left: 1rem;
     margin: 1.5rem 0;
@@ -89,19 +83,12 @@
     color: var(--text-primary-highlight);
 }
 
-/* Horizontal line above title */
-.page-title {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 1.5rem;
-    margin-top: 0;
-}
-
 @media (max-width: 768px) {
-    .notion-page-icon {
+    .page-icon {
         font-size: 3rem;
     }
 
-    .notion-page-content {
+    .page-content {
         font-size: 1rem;
     }
 }
