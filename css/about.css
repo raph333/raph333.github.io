@@ -33,14 +33,14 @@
 .company-section h2 {
     font-size: 1.5rem;
     font-weight: 300;
-    color: var(--text-primary);
+    color: var(--heading);
     margin: 0;
     text-transform: lowercase;
 }
 
 .expand-icon {
     font-size: 1.5rem;
-    color: var(--text-primary);
+    color: var(--heading);
     transition: all 0.3s ease;
     user-select: none;
     transform: rotate(0deg);
@@ -48,7 +48,7 @@
 
 .company-section:hover .expand-icon,
 .company-section:hover h2 {
-    color: var(--text-primary-highlight);
+    color: var(--heading-hover);
 }
 
 .company-section.expanded .expand-icon {

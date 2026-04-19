@@ -10,7 +10,7 @@
     padding: 0.5rem 0;
     border-radius: 6px;
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--heading);
     transition: background-color 0.2s ease;
     cursor: pointer;
 }
@@ -20,7 +20,7 @@
 }
 
 .directory-item:hover .page-name {
-    color: var(--text-secondary-highlight) !important;
+    color: var(--text-hover) !important;
 }
 
 .page-icon {
@@ -33,10 +33,10 @@
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--text-secondary);
+    color: var(--text);
     transition: color 0.2s ease;
 }
 
 .directory-item:visited .page-name {
-    color: var(--text-secondary-fade);
+    color: var(--text-fade);
 }

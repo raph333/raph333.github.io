@@ -58,14 +58,14 @@ main {
 
 .icon-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--text-primary-highlight);
+    border-color: var(--heading-hover);
     transform: translateY(-2px);
 }
 
 .icon-link svg {
     width: 20px;
     height: 20px;
-    color: var(--text-primary);
+    color: var(--heading);
 }
 
 @media (max-width: 768px) {

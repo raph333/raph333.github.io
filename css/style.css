@@ -20,11 +20,11 @@
 
 :root {
     --bg-color: rgba(20, 29, 46, 1);
-    --text-primary: rgba(245, 230, 211, 1);
-    --text-primary-highlight: rgba(249, 207, 106, 1);
-    --text-secondary: rgba(164, 179, 202, 1);
-    --text-secondary-highlight: rgba(189, 210, 232, 1);
-    --text-secondary-fade: rgba(117, 130, 154, 1);
+    --heading: rgba(245, 230, 211, 1);
+    --heading-hover: rgba(249, 207, 106, 1);
+    --text: rgba(164, 179, 202, 1);
+    --text-hover: rgba(189, 210, 232, 1);
+    --text-fade: rgba(117, 130, 154, 1);
     --font-main: "Geist", system-ui, sans-serif;
     /* Other cool fonts: Inter, Nunito , Figtree */
 
@@ -46,7 +46,7 @@ body {
         #212c3b 0%,
         #141d2e 100%
     );
-    color: var(--text-primary);
+    color: var(--text);
     font-family: var(--font-main);
     letter-spacing: 0.02em;
     min-height: 100vh;
@@ -69,12 +69,12 @@ nav {
 
 a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--heading);
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: var(--text-primary-highlight);
+    color: var(--heading-hover);
 }
 
 .nav-links {
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .nav-links a.active {
-    color: var(--text-primary-highlight);
+    color: var(--heading-hover);
 }
 
 main {
@@ -121,7 +121,7 @@ main {
 .page-title {
     font-size: 2.5rem;
     font-weight: 300;
-    color: var(--text-primary);
+    color: var(--heading);
     margin-bottom: 2rem;
     display: block;
     line-height: 1.2;
@@ -134,7 +134,7 @@ main {
 .company-content p {
     margin-bottom: 1.5em;
     line-height: 1.8;
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 1.1rem;
 }
 
