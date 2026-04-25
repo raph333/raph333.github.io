@@ -24,6 +24,7 @@
     --border-hover: rgba(255, 255, 255, 0.2);
     --surface-subtle: rgba(255, 255, 255, 0.03);
     --surface-hover: rgba(255, 255, 255, 0.1);
+    --radius-main: 8px;
     --heading: rgba(245, 230, 211, 1);
     --heading-hover: rgba(249, 207, 106, 1);
     --text: rgba(164, 179, 202, 1);
