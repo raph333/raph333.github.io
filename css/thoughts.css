@@ -10,7 +10,6 @@
     padding: 0.5rem 0;
     border-radius: var(--radius-main);
     text-decoration: none;
-    color: var(--heading);
     transition: background-color 0.2s ease;
     cursor: pointer;
 }
@@ -19,8 +18,9 @@
     background-color: transparent;
 }
 
-.directory-item:hover .page-name {
-    color: var(--text-hover) !important;
+.directory-item:hover .page-name,
+.directory-item:visited:hover .page-name {
+    color: var(--text-hover);
 }
 
 .page-icon {
