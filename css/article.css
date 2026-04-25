@@ -54,7 +54,7 @@
     font-size: 1rem;
     text-decoration: none;
     margin-bottom: 1.5rem;
-    transition: color 0.2s ease;
+    transition: color var(--transition-hover) ease;
     position: relative;
     padding: 0.5rem 0;
 }
