@@ -115,7 +115,8 @@ a:hover {
     color: var(--heading);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.force-hover {
     color: var(--heading-hover);
 }
 
