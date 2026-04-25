@@ -112,6 +112,10 @@ a:hover {
 }
 
 .nav-links a.active {
+    color: var(--heading);
+}
+
+.nav-links a:hover {
     color: var(--heading-hover);
 }
 
