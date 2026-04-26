@@ -62,11 +62,13 @@
 .back-link::before {
     content: "←";
     display: inline-block;
+    font-size: 1.1rem;
     padding-right: 0.75rem;
 }
 
 .back-link:hover {
     color: var(--heading-hover);
+    filter: drop-shadow(0 0 12px var(--heading-hover-glow));
 }
 
 @media (max-width: 768px) {
