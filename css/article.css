@@ -36,39 +36,26 @@
     color: var(--heading);
 }
 
-/* List styles within articles */
-.page-content ul,
-.page-content ol {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.page-content li {
-    margin-bottom: 0.5rem;
-}
-
-/* Back link styling */
+/* Back link */
 .back-link {
     display: inline-block;
     color: var(--heading);
-    font-size: 1rem;
     text-decoration: none;
     margin-bottom: 1.5rem;
     transition: color var(--transition-hover) ease;
     position: relative;
-    padding: 0.5rem 0;
+    padding: 1rem;
+    margin-left: -1rem;
 }
-
+/* this before element allows defining the arrow here instead of in html */
 .back-link::before {
     content: "←";
     display: inline-block;
     font-size: 1.1rem;
-    padding-right: 0.75rem;
 }
-
 .back-link:hover {
     color: var(--heading-hover);
-    filter: drop-shadow(0 0 12px var(--heading-hover-glow));
+    filter: drop-shadow(0 0 10px rgba(var(--rgb-heading-hover), 1));
 }
 
 @media (max-width: 768px) {
