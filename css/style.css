@@ -28,9 +28,10 @@
     --transition-hover: 0.2s;
     --heading: rgba(245, 230, 211, 1);
     --heading-hover: rgba(249, 207, 106, 1);
+    --text-fade: rgba(117, 130, 154, 1);
     --text: rgba(164, 179, 202, 1);
     --text-hover: rgba(189, 210, 232, 1);
-    --text-fade: rgba(117, 130, 154, 1);
+    --text-hover-glow: rgba(189, 210, 232, 0.6);
     --font-main: "Geist", system-ui, sans-serif;
     /* Other cool fonts: Inter, Nunito , Figtree */
 

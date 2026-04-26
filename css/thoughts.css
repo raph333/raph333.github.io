@@ -21,6 +21,7 @@
 .directory-item:hover .page-name,
 .directory-item:visited:hover .page-name {
     color: var(--text-hover);
+    filter: drop-shadow(0 0 12px var(--text-hover-glow));
 }
 
 .page-icon {
@@ -34,7 +35,9 @@
     font-weight: 400;
     line-height: 1.5;
     color: var(--text);
-    transition: color var(--transition-hover) ease;
+    transition:
+        color var(--transition-hover) ease,
+        filter var(--transition-hover) ease;
 }
 
 .directory-item:visited .page-name {
