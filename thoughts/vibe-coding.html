@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>What I use vibe coding for | Raphael Peer</title>
+        <title>When to vibe code | Raphael Peer</title>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="stylesheet" href="../css/style.css" />
@@ -25,12 +25,20 @@
         <main class="about-main">
             <div class="content-container">
                 <a href="/thoughts.html" class="back-link"></a>
-                <h1 class="page-title">What to use vibe coding for</h1>
+                <h1 class="page-title">When to vibe code</h1>
 
                 <div class="page-content">
                     <p>
-                        Vibe coding is extremely useful, even if I wouldn't use
-                        it for production code:
+                        In this context, let's define vibe coding as writing
+                        code with LLMs without reading the code. That's very
+                        different from writing code with LLMs but reviewing it
+                        carefully and improving it with further prompts or
+                        manual edits.
+                    </p>
+
+                    <p>
+                        While I don't use vibe coding for production, it's still
+                        extremely useful.
                     </p>
 
                     <p>
@@ -41,8 +49,8 @@
                     </p>
 
                     <p>
-                        I use it daily to write one-off code for testing and
-                        analysis.
+                        I use it almost daily to write one-off code for testing
+                        and analysis.
                     </p>
 
                     <p>
@@ -50,6 +58,32 @@
                         you see if it's worth building. For product decisions, a
                         screen recording of a vibe-coded feature can be more
                         useful than a typed-out plan.
+                    </p>
+
+                    <p>
+                        As a general rule of thumb, I tend to vibe code in cases
+                        where it's obvious if the code works or not (e.g., this
+                        website) and it's not a problem if it doesn't. In those
+                        cases, it's safe to skip reading the code — just see if
+                        it works and prompt the LLM to fix it otherwise.
+                    </p>
+
+                    <p>
+                        In cases where it isn't obvious if the LLM-produced code
+                        works as expected and the consequences would be dire if
+                        it doesn't, I carefully review LLM-generated code and
+                        improve it with further prompts. Most high-traffic
+                        production software fits this definition.
+                    </p>
+                    <p>
+                        One could argue that thorough testing can show if the
+                        code works without reading it. While testing is
+                        important, I have not yet seen a test setup so good that
+                        one can skip the step of understanding the code and just
+                        trust that it works. I'm open to changing my mind —
+                        we'll see if such a setup can be created. For now, I
+                        continue to ship only code that I have carefully
+                        reviewed and that I understand.
                     </p>
                 </div>
             </div>
