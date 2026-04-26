@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap");
 
 /*
-   DESIGN SYSTEM GRAMMAR
+   DESIGN GRAMMAR
    ---------------------
 
    WEIGHTS:
@@ -12,10 +12,10 @@
    - 0.02em: Currently uniform for all text to improve dark mode readability
 
    COLORS:
-   - Primary: Sand - headers
-   - Secondary: Blue - text
-   - Highlight: Brighter version of color upon hover/active
-   - Fade: Dimmer version of color after visited
+   - --heading: Sand (warm beige)
+   - --text: Blue-grey
+   - --*-hover: Brighter version on hover/active
+   - --*-fade: Dimmer version after visited
 */
 
 :root {
@@ -35,7 +35,6 @@
     --font-main: "Geist", system-ui, sans-serif;
     /* Other cool fonts: Inter, Nunito , Figtree */
 
-    /* Container widths */
     --container-width-wide: 1000px;
     --container-width-content: 700px;
 }
@@ -137,7 +136,7 @@ main {
     }
 }
 
-/* Shared Layout for Internal Pages */
+/* Shared layout for internal pages (about, thoughts) */
 
 .about-main {
     display: flex;
