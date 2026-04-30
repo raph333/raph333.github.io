@@ -1,6 +1,7 @@
 .hero-banner {
     width: 100%;
     height: 300px;
+    background-color: var(--background);
     background-image: url("../images/beaches/conil_left.jpeg");
     background-size: cover;
     background-position: center 30%;
