@@ -2,7 +2,11 @@
     width: 100%;
     height: 300px;
     background-color: var(--background);
-    background-image: url("../images/beaches/conil_left.jpeg");
+    background-image: image-set(
+        url("../images/beaches/conil_left.avif") type("image/avif"),
+        url("../images/beaches/conil_left.webp") type("image/webp"),
+        url("../images/beaches/conil_left.jpeg") type("image/jpeg")
+    );
     background-size: cover;
     background-position: center 30%;
     border-top: 1px solid var(--border-subtle);
