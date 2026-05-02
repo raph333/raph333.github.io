@@ -3,9 +3,9 @@
     height: 300px;
     background-color: var(--background);
     background-image: image-set(
-        url("../images/beaches/conil_left.avif") type("image/avif"),
-        url("../images/beaches/conil_left.webp") type("image/webp"),
-        url("../images/beaches/conil_left.jpeg") type("image/jpeg")
+        url("../images/hero.avif") type("image/avif"),
+        url("../images/hero.webp") type("image/webp"),
+        url("../images/hero.jpeg") type("image/jpeg")
     );
     background-size: cover;
     background-position: center 30%;
