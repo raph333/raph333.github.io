@@ -13,33 +13,39 @@
 
    COLORS:
    - --heading: Sand (warm beige)
+   - --heading-hover: Shift towards brighter gold
    - --text: Blue-grey
-   - --*-hover: Brighter version on hover/active
-   - --*-fade: Dimmer version after visited
+   - --text-fade: Dimmed text color
+   - --text-hover: Shift towards heading color
+   - --*-hover-glow: Semi-transparent glow of the hover color
 */
 
 :root {
+    /* Background & surface */
     --background: rgba(20, 29, 46, 1);
     --border-subtle: rgba(255, 255, 255, 0.1);
     --border-hover: rgba(255, 255, 255, 0.2);
     --surface-subtle: rgba(255, 255, 255, 0.03);
     --surface-hover: rgba(255, 255, 255, 0.1);
+
+    /* Layout */
     --radius-main: 8px;
     --transition-hover: 0.2s;
+    --container-width-wide: 1000px;
+    --container-width-content: 700px;
+
+    /* Typography */
+    --font-main: "Geist", system-ui, sans-serif;
+    /* Other cool fonts: Inter, Nunito , Figtree */
     --heading: rgba(245, 230, 211, 1);
     --rgb-heading-hover: 249, 207, 106;
     --heading-hover: rgba(var(--rgb-heading-hover), 1);
     --heading-hover-glow: rgba(var(--rgb-heading-hover), 0.6);
     --text-fade: rgba(117, 130, 154, 1);
-    --text: rgba(164, 179, 202, 1);
-    --rgb-text-hover: 189, 210, 232;
+    --text: rgba(154, 169, 193, 1);
+    --rgb-text-hover: 194, 188, 182;
     --text-hover: rgba(var(--rgb-text-hover), 1);
     --text-hover-glow: rgba(var(--rgb-text-hover), 0.6);
-    --font-main: "Geist", system-ui, sans-serif;
-    /* Other cool fonts: Inter, Nunito , Figtree */
-
-    --container-width-wide: 1000px;
-    --container-width-content: 700px;
 }
 
 * {
