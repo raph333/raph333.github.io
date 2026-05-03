@@ -13,7 +13,7 @@
 .company-section {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border);
     border-radius: var(--radius-main);
     cursor: pointer;
     transition: all var(--transition-hover) ease;
@@ -21,7 +21,7 @@
 
 .company-section:hover {
     border-color: var(--border-hover);
-    background: var(--surface-subtle);
+    background: var(--surface-hover-subtle);
 }
 
 .company-header {

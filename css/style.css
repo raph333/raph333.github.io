@@ -23,10 +23,11 @@
 :root {
     /* Background & surface */
     --background: rgba(20, 29, 46, 1);
-    --border-subtle: rgba(255, 255, 255, 0.1);
+    --border: rgba(255, 255, 255, 0.1);
     --border-hover: rgba(255, 255, 255, 0.2);
-    --surface-subtle: rgba(255, 255, 255, 0.03);
-    --surface-hover: rgba(255, 255, 255, 0.1);
+    --surface: rgba(255, 255, 255, 0.03);
+    --surface-hover-subtle: rgba(255, 255, 255, 0.01);
+    --surface-hover-strong: rgba(255, 255, 255, 0.1);
 
     /* Layout */
     --radius-main: 8px;
